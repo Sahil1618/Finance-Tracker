@@ -17,10 +17,10 @@ connectDB();
 
 // ✅ Use this for dynamic origin checking
 const allowedOrigins = [
-  "http://localhost:3000",
-  "http://localhost:5000",
+  // "http://localhost:3000",
+  // "http://localhost:5000",
   "https://finance-tracker-ten-zeta.vercel.app", // ✅ your frontend Vercel URL
-  "https://finance-tracker-1-yj2r.onrender.com", // ✅ your backend live URL
+  // "https://finance-tracker-1-yj2r.onrender.com", // ✅ your backend live URL
 ];
 
 app.use(
