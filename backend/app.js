@@ -21,6 +21,7 @@ connectDB();
 const allowedOrigins = [
   "http://localhost:5000",
   "http://localhost:3000",
+  "https://finance-tracker-1-yj2r.onrender.com",
   // add more origins as needed
 ];
 
