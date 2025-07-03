@@ -39,7 +39,13 @@
 
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Login from "./Pages/Auth/Login";
@@ -51,7 +57,7 @@ import Dashboard from "./Pages/Dashboard/Dashboard";
 const App = () => {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <Routes>
           <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/login" element={<Login />} />
@@ -60,7 +66,7 @@ const App = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/setAvatar" element={<SetAvatar />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 };
