@@ -192,7 +192,7 @@
     "yargs-parser": "^21.1.1"
   },
   "scripts": {
-  "dev": "nodemon app.js"
+  "start": "nodemon app.js"
 },
   "keywords": [],
   "author": "",
